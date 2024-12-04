@@ -1,0 +1,53 @@
+$primary-color: #e93740;
+
+$secondary-color: #1c1c1c;
+
+$accent-color: #8b8b8b;
+
+$background-color: #ffffff;
+
+$text-color: #030303;
+
+$footback-color: #f4f4f4;
+
+$background-color-slider: #E8E8E8;
+
+h1 {
+  font-size: 64px;
+  line-height: 75px;
+  font-weight: 800;
+  color: #1c1c1c;
+  margin: 0;
+}
+
+h2 {
+  font-size: 48px;
+  line-height: 48px;
+  font-weight: 700;
+  color: #1c1c1c;
+  margin: 0;
+}
+
+h3 {
+  font-size: 32px;
+  line-height: 48px;
+  font-weight: 400;
+  color: #1c1c1c;
+  margin: 0;
+}
+
+h4 {
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 72px;
+  color: #1c1c1c;
+  margin: 0;
+}
+
+p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color:$accent-color;
+  margin: 0;
+}
