@@ -45,6 +45,10 @@ p {
   font-family: "Plus Jakarta Sans", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* Ripple effect */
 .ripple {
   background-position: center;
@@ -388,6 +392,10 @@ p {
   gap: 8px;
   font-size: 16px;
   flex: 1;
+}
+
+.dropdown-icon-drop {
+  margin-left: auto;
 }
 
 .home-search-icon-btn {
@@ -949,6 +957,9 @@ p {
   .feat-button {
     font-size: 10px;
   }
+  .feat-button {
+    margin-bottom: 56px;
+  }
 }
 @media (max-width: 768px) {
   .featured-section .row .col-xl-4,
@@ -1066,6 +1077,9 @@ p {
   .perfomance-section-count {
     flex-direction: column;
     gap: 16px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
   }
   .perfomance-count {
     max-width: 311px;
@@ -1261,13 +1275,15 @@ p {
   }
   .location-img1,
   .location-img3 {
-    height: 180px;
+    height: 275px;
   }
   .img2-upper1,
   .img2-upper2,
   .img2-lower1,
   .img2-lower2 {
-    height: 180px;
+    height: 275px;
+    width: inherit;
+    max-width: 100%;
   }
   .location-img2 {
     width: 100%;
@@ -1278,6 +1294,7 @@ p {
     justify-content: center;
     align-items: center;
     gap: 15px;
+    width: 100%;
   }
   .location-img2-lower {
     margin-top: 15px;
@@ -1533,6 +1550,31 @@ p {
     display: flex;
     flex-direction: column;
   }
+  .footer-section-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    flex-wrap: wrap;
+    gap: 50px;
+  }
+  .footbtn {
+    color: #ffffff;
+    background-color: #e93740;
+    padding: 14px 36px;
+    border-radius: 47px;
+    width: 100%;
+    border: none;
+  }
+  .footbtn:hover {
+    color: #e93740;
+    background-color: #ffffff;
+  }
+  .footinput {
+    width: 100% !important;
+    padding: 16px 19px;
+  }
 }
 .coppyright-section {
   background-color: #ffffff;
@@ -1547,11 +1589,7 @@ p {
 }
 
 @media (max-width: 575px) {
-  .coppyright-section {
-    max-width: 247px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-inline: auto;
+  .footer-section-info5 {
+    max-width: 100%;
   }
 }/*# sourceMappingURL=common.css.map */
