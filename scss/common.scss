@@ -34,15 +34,12 @@ html {
 /* Navbar Styling */
 
 .navbar {
-  display: flex;
-  flex-direction: column;
+  @include center-col-nav;
   background-color: $background-color;
   position: relative;
 
   .navbar-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include center-between-nav;
     padding: 21px 15px;
     gap: 10px;
 
@@ -82,16 +79,14 @@ html {
     }
 
     .nav-buttons {
-      display: flex;
+      @include center-h-nav;
       gap: 10px;
-      align-items: center;
 
       .signin-btn {
         color: $primary-color;
         font-size: 1rem;
         line-height: 14px;
-        display: flex;
-        align-items: center;
+        @include center-h-nav;
         padding: 15px 30px;
         border: none;
         border-radius: 45px;
@@ -121,8 +116,7 @@ html {
         font-weight: 500;
         gap: 8px;
         transition: all 0.3s ease;
-        display: flex;
-        align-items: center;
+        @include center-h-nav;
 
         &:hover {
           background-color: $background-color;
@@ -205,8 +199,7 @@ html {
         font-size: 1rem;
         line-height: 14px;
         text-decoration: none;
-        display: flex;
-        align-items: center;
+        @include center-text-nav;
         padding: 15px 30px;
         border: none;
         border-radius: 45px;
@@ -216,8 +209,6 @@ html {
         transition: all 0.3s ease;
         margin-top: 1rem;
         width: 100%;
-        text-align: center;
-        justify-content: center;
 
         &:hover {
           color: $background-color;
@@ -314,15 +305,10 @@ html {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include center-div-home;
 
   &-info {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    @include center-divcol-home;
     max-width: 888px;
 
     h1 {
@@ -359,8 +345,7 @@ html {
     }
 
     .search-bar {
-      display: flex;
-      align-items: center;
+      @include center-h-nav;
       background-color: $background-color;
       border-radius: 80px;
       width: 100%;
@@ -384,8 +369,7 @@ html {
       }
 
       .location-dropdown {
-        display: flex;
-        align-items: center;
+        @include center-h-nav;
         cursor: pointer;
         padding: 32.3px 30px;
         gap: 8px;
@@ -462,10 +446,7 @@ html {
     background-position: center center;
 
     &-info {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
+      @include center-text-nav;
       max-width: 331px;
 
       h1 {
@@ -510,14 +491,12 @@ html {
         }
 
         .home-search-icon-btn-big {
-          display: flex;
+          @include center-simple-home;
           width: 100%;
           border-radius: 66px;
           border: none;
           background-color: $primary-color;
           color: $background-color;
-          justify-content: center;
-          align-items: center;
           padding: 20px 0px;
           gap: 8px;
 
@@ -540,11 +519,8 @@ html {
 
 .category-section {
   .category-section-info {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     margin: 100px 0px;
-    flex-direction: column;
+    @include center-divcol-home;
 
     .category-section-head {
       margin-bottom: 24px !important;
@@ -573,9 +549,7 @@ html {
           border-radius: 55px;
           height: 59px;
           width: 59px;
-          display: flex;
-          align-items: center;
-          justify-content: center;
+          @include center-simple-home;
 
           &.category-icon-holder1 {
             background-color: #fdebec;
@@ -599,8 +573,7 @@ html {
         }
 
         .category-iconame-holder {
-          display: flex;
-          align-items: center;
+          @include center-h-nav;
         }
       }
     }
@@ -652,10 +625,7 @@ html {
 // featured
 
 .featured-section-wraper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  @include center-divcol-home;
 }
 
 .category-section-head {
@@ -672,16 +642,11 @@ html {
 }
 
 .featured-semisection {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  @include center-divcol-home;
 }
 
 .slider-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include center-simple-home;
   background-color: $background-color;
   margin: 56px 0px;
   gap: 39px;
@@ -818,9 +783,7 @@ html {
 }
 
 .footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  @include center-between-nav;
   padding: 24px;
   border-top: 1px solid $secondary-color;
 }
@@ -851,15 +814,14 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
+  @include center-div-home;
   height: 44px;
   width: 44px;
   background-color: #f4f4f4;
 }
 
 .feat-button-holder {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include center-div-home;
   width: 100%;
 }
 
@@ -1007,9 +969,7 @@ html {
 
     .container {
       .perfomance-section-wrap {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        @include center-between-nav;
         padding: 80px 0 94px 0;
         gap: 50px;
         width: 100%;
@@ -1023,10 +983,7 @@ html {
           gap: 32px;
 
           .perfomance-count {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
+            @include center-divcol-home;
             background-color: $secondary-color;
             padding: 84px 62px;
             color: $background-color;
@@ -1144,10 +1101,7 @@ html {
 //   location
 
 .location-section-wrap {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  @include center-divcol-home ;
   margin: 100px 0px 100px 0px;
 }
 .location-section-wrap-images {
@@ -1163,8 +1117,7 @@ html {
   background-size: cover;
   background-position: center;
   color: $background-color;
-  align-items: end;
-  display: flex;
+  @include center-location-end;
   border-radius: 10px;
   padding: 18px 18px;
 }
@@ -1176,8 +1129,7 @@ html {
   background-size: cover;
   background-position: center;
   color: $background-color;
-  align-items: end;
-  display: flex;
+  @include center-location-end;
   border-radius: 10px;
   padding: 18px 18px;
 }
@@ -1204,8 +1156,7 @@ html {
   background-size: cover;
   background-position: center;
   color: $background-color;
-  align-items: end;
-  display: flex;
+  @include center-location-end;
   border-radius: 10px;
   padding: 18px 18px;
 }
@@ -1217,8 +1168,7 @@ html {
   background-size: cover;
   background-position: center;
   color: $background-color;
-  align-items: end;
-  display: flex;
+  @include center-location-end;
   border-radius: 10px;
   padding: 18px 18px;
 }
@@ -1230,8 +1180,7 @@ html {
   background-size: cover;
   background-position: center;
   color: $background-color;
-  align-items: end;
-  display: flex;
+  @include center-location-end;
   border-radius: 10px;
   padding: 18px 18px;
 }
@@ -1242,8 +1191,7 @@ html {
   background-size: cover;
   background-position: center;
   color: $background-color;
-  align-items: end;
-  display: flex;
+  @include center-location-end;
   border-radius: 10px;
   padding: 18px 18px;
 }
@@ -1360,10 +1308,7 @@ html {
 // artical
 
 .artical-sectionwrap {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  @include center-divcol-home;
 }
 
 .artical-section-info-wrap {
@@ -1380,15 +1325,13 @@ html {
 }
 
 .artical-left {
-  display: flex;
-  flex-direction: column;
+  @include center-col-nav;
   gap: 24px;
   width: 50%;
 }
 
 .artical-left-bottom {
-  display: flex;
-  flex-direction: column;
+  @include center-col-nav;
   gap: 16px;
 }
 
@@ -1414,8 +1357,7 @@ html {
 }
 
 .artical-right {
-  display: flex;
-  flex-direction: column;
+  @include center-col-nav;
   gap: 32px;
   width: 50%;
 }
@@ -1426,8 +1368,7 @@ html {
 }
 
 .artical-right-wraper-rightsection {
-  display: flex;
-  flex-direction: column;
+  @include center-col-nav;
   gap: 16px;
 }
 
@@ -1493,7 +1434,6 @@ html {
 .footer-section-wrap {
   display: flex;
   justify-content: space-between;
-  align-self: center;
   padding-top: 70px;
   padding-bottom: 82px;
   flex-wrap: wrap;
@@ -1501,8 +1441,7 @@ html {
 }
 
 .footer-section-info1 {
-  display: flex;
-  flex-direction: column;
+  @include center-col-nav;
   max-width: 413px;
   width: 100%;
 }
@@ -1524,9 +1463,7 @@ html {
   height: 27.71px;
   width: 27.71px;
   border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include center-div-home;
   background-color: $primary-color;
 }
 
@@ -1535,29 +1472,25 @@ html {
 }
 
 .footer-section-info2 {
-  display: flex;
-  flex-direction: column;
+  @include center-col-nav;
   gap: 21px;
   max-width: 91px;
   width: 100%;
 }
 .footer-section-info3 {
-  display: flex;
-  flex-direction: column;
+  @include center-col-nav;
   gap: 21px;
   max-width: 151px;
   width: 100%;
 }
 .footer-section-info4 {
-  display: flex;
-  flex-direction: column;
+  @include center-col-nav;
   gap: 21px;
   max-width: 75px;
   width: 100%;
 }
 .footer-section-info5 {
-  display: flex;
-  flex-direction: column;
+  @include center-col-nav;
   gap: 21px;
   max-width: 275px;
   width: 100%;
@@ -1571,8 +1504,7 @@ html {
 }
 
 .footer-section-info2-linkwrap {
-  display: flex;
-  flex-direction: column;
+  @include center-col-nav;
   gap: 20px;
 }
 
@@ -1615,14 +1547,11 @@ html {
 
 @media (max-width: 575px) {
   .footer-section-wrap {
-    display: flex;
-    flex-direction: column;
+    @include center-col-nav;
   }
 
   .footer-section-wrap {
-    display: flex;
-    justify-content: space-between;
-    align-self: center;
+    @include center-between-nav;
     padding-top: 32px;
     padding-bottom: 32px;
     flex-wrap: wrap;
@@ -1654,9 +1583,7 @@ html {
 .coppyright-section {
   background-color: $background-color;
   color: #696888;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
+  @include center-text-nav;
   padding: 24px;
   font-size: 12px;
   font-weight: 400;
